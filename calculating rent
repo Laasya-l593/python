@@ -1,0 +1,12 @@
+m=int(input())                     # calculating the rent to be paid
+r=float(input())
+d=int(input())
+if(m>12):
+    print("invalid")
+elif(m==4 or m==5 or m==6 or m==7 or m==11 or m==12):
+    r1=((20/100)*r)+r
+    rent1=r1*d
+    print("%.2f"%rent1)
+else:
+    rent=d*r
+    print("%.2f"%rent)
