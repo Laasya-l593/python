@@ -1,0 +1,24 @@
+a=int(input())                                               # printing no.of notes required
+b=a//2000
+c=a%2000
+print("no.of 2000 notes:",b," remainder is:",c)
+d=c//500
+e=c%500
+print("no.of 500 notes:",d," remainder is:",e)
+f=e//200
+g=e%200
+print("no.of 200 notes:",f," remainder is:",g)
+h=g//100
+i=g%100
+print("no.of 100 notes:",h," remainder is:",i)
+j=i//50
+k=i%50 
+print("no.of 50 notes:",j," remainder is:",k)
+x=k//20
+y=k%20
+print("no.of 20 notes:",x," remainder is:",y)
+u=y//10
+v=y%10
+print("no.of 10 notes:",u," remainder is:",v)
+l=b+d+f+h+j+x+u
+print("with the",l,"notes i can make",a," much of amount")
