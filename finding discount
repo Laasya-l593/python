@@ -1,0 +1,26 @@
+i=int(input())
+c=input()
+if((i>=1000 and i<=2000) and (c=='r' or c=='R')):
+    print("Discount:0%")
+elif((i>2000 and i<=3000) and (c=='r' or c=='R')):
+    print("Discount:5%")
+    d=((5/100)*i)
+    print("discount amount:",d,"\n pay:",i-d)
+elif((i>3000) and (c=='r' or c=='R')):
+    print("Discount:10%")
+    e=((10/100)*i)
+    print("discount amount:",e,"\n pay:",i-e)
+elif((i>=1000 and i<=2000) and (c=='n' or c=='N')):
+    print("Discount:5%")
+    f=((5/100)*i)
+    print("discount amount:",f,"\n pay:",i-f)
+elif((i>2000 and i<=3000) and (c=='n' or c=='N')):
+    print("Discount:10%")
+    g=((10/100)*i)
+    print("discount amount:",g,"\n pay:",i-g)
+elif((i>3000) and (c=='n' or c=='N')):
+    print("Discount:15%")
+    h=((15/100)*i)
+    print("discount amount:",h,"\n pay:",i-h)
+else:
+    print(i)
