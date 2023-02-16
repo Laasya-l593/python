@@ -1,0 +1,27 @@
+class a:
+    def sqr(self):
+        a=int(input("enter value:"))
+        print("a square =",a*a)
+        print("class a is executed")
+class b:
+    def cub(self):
+        a=int(input("enter value:"))
+        print("a cube =",a*a*a)
+        print("class b is executed")
+class c(a,b):
+    def put(self):
+        print("class c is executed")
+        print("inherited a and b & its c ")
+class d(c):
+    def put1(self):
+        a=int(input("enter value:"))
+        print("Quotient",a//10)
+        print("class d,class c inherited")
+obj1=a()
+obj1.sqr()
+# obj1.cub()      # we can't call b's fun using a's class object bcoz a is not inherited from b
+obj=d()
+obj.sqr()
+obj.cub()
+obj.put()        # here d is inherited from a,b,c.so,we can call these three class's fun with d's object
+obj.put1()
