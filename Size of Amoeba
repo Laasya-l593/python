@@ -1,0 +1,8 @@
+n=int(input("enter no.of months:\n"))
+a=0                                              # example of fibonacci series
+b=1
+for i in range(n-2):
+    c=a+b
+    a=b
+    b=c
+print("the amoeba size is:",c)
