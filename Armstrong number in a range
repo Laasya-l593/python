@@ -1,0 +1,13 @@
+n=int(input())               # armstrong no.s in a specified interval
+m=int(input())
+print("Armstrong No.s are:")
+for i in range(n,m+1):
+    j=i
+    s=0
+    while(i!=0):
+        r=i%10
+        i=i//10
+        f=r**3
+        s=s+f
+    if(s==j):
+        print(j)
