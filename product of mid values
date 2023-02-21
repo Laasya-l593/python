@@ -1,0 +1,22 @@
+n=int(input())
+a=n
+num=0
+while a>0:
+    num=num+1
+    a=a//10
+if(num>=4):
+    num=num//2
+    ch=0
+    while(n>0):
+        r=n%10
+        if(ch==num):
+            mid1=r
+        elif(ch==num-1):
+            mid2=r
+        n=n//10
+        ch=ch+1
+    p=mid1*mid2
+    print(p)
+else:
+    print("It is not a 4 or morethan 4-digit no.")
+    
