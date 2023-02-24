@@ -1,0 +1,13 @@
+def weightMachine(N,weights,T):
+    a=0
+    for i in weights:
+        a=a+1
+        if(i>T):
+            a=a+1
+    return a
+N=int(input())
+weights=[]
+for i in range(N):
+    weights.append(int(input()))
+T=int(input())
+print(weightMachine(N,weights,T))
